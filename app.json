@@ -1,7 +1,7 @@
 {
   "name": "Node app with Express and Heroku",
   "description": "A barebones Node.js app using Express 4",
-  "repository": "",
+  "repository": "https://github.com/sf-wdi-22-23/express_heroku_starter",
   "logo": "",
   "keywords": ["node", "express"],
   "image": ""

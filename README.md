@@ -1,7 +1,9 @@
 ## Getting set up on Heroku with Node + Mongoose
 
 ### Before you do anything
-1) Stop and commit. Make sure your app is under version control with `git`.  If you're not sure whether your project is under version control yet, you definitely haven't been commiting often enough! But run `git status` to check if your project directory is a repo and `git init` to make it into one if necessary. __Stop and commit your changes.__
+1) Let's remove the link to the repo we cloned and commit the starting point of our project in a local git repo. We can check the location of the remote repository by typing: `git remote -v`. In order to remove the link to the class repo, type: `git remote remove origin`. You can confirm this was successful with the first command.
+
+If so, your app is still under version control with `git` but it only has a local repository. You can run `git status` to make sure. If not, just type `git init` to make it into one again. __Stop and commit your changes.__
 
 2) Sign up for an account with heroku: https://www.heroku.com/
 
@@ -20,7 +22,7 @@
 5) In your `server.js` file, modify `app.listen` to use `process.env.PORT` (this will be set, dynamically, by Heroku):
 
 ```javascript
-    app.listen(process.env.PORT || 3000)
+    app.listen(process.env.PORT || 5000)
 ```
 
 6) Tell heroku to use the mongolab addon. In your terminal, run:
@@ -83,7 +85,7 @@ This is assuming your main application file is called `server.js`. If your main 
     - Make sure you are in your main project directory (the same directory as `server.js`). Then run:  
 ``` bash
     touch Procfile
-    echo "web: npm start" >> Procfile
+    echo "web: node server.js" >> Procfile
 ```
 
 ### Deploy!
