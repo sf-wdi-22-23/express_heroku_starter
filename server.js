@@ -5,19 +5,16 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
-var where = require("./utils/where");
 var db = require("./models/index");
-
-var where = require("./utils/where");
 
 app.set("view engine", "ejs");
 
-app.use("/static", express.static("/public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-app.get('/', function(request, response) {
-  response.render("index");
+app.get('/', function(req, res) {
+  res.render("index");
 });
 
 app.listen(3000, function() {
