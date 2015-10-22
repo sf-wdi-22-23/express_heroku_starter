@@ -65,7 +65,7 @@ Here are some common dependencies:
 For example, if you're using body-parser but don't have it listed in your package.json `dependencies`, run the following:
 
 ```bash
-    npm install body-parser
+    npm install body-parser --save
 ```
 
 ### Check the start script
