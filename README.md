@@ -22,7 +22,7 @@ If so, your app is still under version control with `git` but it only has a loca
 5) In your `server.js` file, modify `app.listen` to use `process.env.PORT` (this will be set, dynamically, by Heroku):
 
 ```javascript
-    app.listen(process.env.PORT || 5000)
+    app.listen(process.env.PORT || 3000)
 ```
 
 6) Tell heroku to use the mongolab addon. In your terminal, run:
