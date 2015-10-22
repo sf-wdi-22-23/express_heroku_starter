@@ -17,6 +17,8 @@ If so, your app is still under version control with `git` but it only has a loca
 
 ```bash
     heroku create
+    //OR
+    heroku create YOUR_APP_NAME
 ```
 
 5) In your `server.js` file, modify `app.listen` to use `process.env.PORT` (this will be set, dynamically, by Heroku):
