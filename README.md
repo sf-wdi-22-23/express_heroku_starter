@@ -55,8 +55,7 @@ Here are some common dependencies:
         "ejs": "^2.3.4",
         "express": "^4.13.3",
         "express-session": "^1.11.3",
-        "mongoose": "^4.1.5",
-        "nodemon": "^1.4.1"
+        "mongoose": "^4.1.5"
       }
     }
 ```
