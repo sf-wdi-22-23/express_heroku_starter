@@ -79,8 +79,8 @@ For example, if you're using body-parser but don't have it listed in your packag
 
 This is assuming your main application file is called `server.js`. If your main file is called something else, adjust the script to use your file name.
 
-### Add a Procfile
-11) Create a `Procfile` so that Heroku knows how to run your application:
+### Check the Procfile
+11) Notice we have a `Procfile` so that Heroku knows how to run your application. If you do not have a Procfile, create one:
     - Make sure you are in your main project directory (the same directory as `server.js`). Then run:  
 ``` bash
     touch Procfile
